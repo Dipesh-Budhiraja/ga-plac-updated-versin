@@ -947,10 +947,10 @@ int main(){
 	int noOfEquipped = counterOfSkills.second;
 
 	// make initial population
-	make_population(c);
+	make_population(c, noOfCompulsory);
 
 	// calculate its fitness
-	fitnessFunction(c);
+	fitnessFunction(c,noOfCompulsory,noOfEquipped);
 
 	// variable to be used
 	int gen = 0;
